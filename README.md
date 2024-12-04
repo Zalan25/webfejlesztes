@@ -1,9 +1,14 @@
 # webfejlesztes
 IT architektura alapjai beadandó
+
 Oldal készítője: Huncsik Zalán
+
 Weboldalam URL-je: https://zalan25.github.io/webfejlesztes/
+
 A weboldalam az Egyesült Államok kosárcsapatát mutatja be. Betekintést nyerhetünk a történelmükbe, a 2024-es olimpiai összeállításba, valamint egy webshopba.
+
 Saját JavaScript kódom: a Vásárlás menüpontban (bolt.html) részben található. Egy vásárlási lehetőség biztosít. Ha a felhasználó legalább 2 terméket vásárol, és azok összege meghaladja 70.000-et, ajándékot kap.
+
 Google font:
 https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap
 

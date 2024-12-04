@@ -1,0 +1,301 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #404040;
+    margin: 5px;
+    padding: 5px;
+}
+
+div#tartalom{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* fejléc beállítások */
+header{
+    background-image: url("kepek/palya.jpeg");
+    height: 100%;
+    flex-basis: 100%;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-size: cover;
+    display: flex;
+}
+
+h1{
+    font-family: "Archivo Black", sans-serif;
+    margin: 0;
+    color: white;
+    font-size: 150px;;
+    text-align: center;
+    align-self: center;
+    text-shadow: 3px 3px 3px black;
+}
+
+a{
+    text-decoration: none;
+    color: brown;
+}
+
+/*kontrol panel*/
+nav ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+}
+
+nav  li{
+    margin: 10px;
+    flex-basis: 100%;
+    height: 70px;
+
+}
+
+nav li a{
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    flex-basis: 100%;
+    height: 80px;
+    font-size: 35px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center; /*függőlegesen közép*/
+    color: black;
+    background-color: darkgray;
+    border-style: solid;
+    border-color: antiquewhite;
+    border-radius: 15px 15px 15px 15px;
+}
+
+nav li a#aktiv {
+    background-color: antiquewhite;
+    color: black;
+    border-color: black;
+}
+
+
+/* tartalmi beállítások*/
+article {
+    margin: 0;
+    flex-basis: 100%;
+    padding: 10px 10px;
+    color: black;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px 20px 20px 20px;
+    background-color: antiquewhite;
+    flex-direction: column;
+    height: fit-content;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    color: brown;
+}
+
+.kosartable{
+    background-image: url("kepek/palyakep.png");
+    width: 101%;
+    height: 500px;
+    text-align: center;
+}
+.bolt{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+/*csapatkép méretét fixálja*/
+#csapat{
+    display: block;
+    margin: 0 auto;
+    width:50%;
+    padding: 5px;
+    padding-top: 15px;
+}
+/* képek nagyítása*/
+.nagyitas:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+/*Aside tulajdonságok*/
+aside{
+    padding: 0;
+    margin: 5px;
+    height: fit-content;
+    flex-direction: row;
+    flex: 1 1 100%;
+    align-content: flex-start;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    background-color: antiquewhite;
+}
+
+form{
+    text-align: center;
+}
+
+/*átirányító képek */
+.kiemeles{
+    width: 90%;
+}
+.embiid{
+    width: 40%;
+}
+
+
+
+/*alsü lábléc*/
+footer{
+    text-align: center;
+    color: whitesmoke;
+    margin: 10px 10px;
+}
+
+/*bolt*/
+#boltoldal{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    gap: 5px;
+}
+/*bolt képek*/
+.kepbolt{
+    width: 80%;
+    height: 50%;
+}
+
+/*képgaléria*/
+.slider {
+    width: 300px;
+    min-width: 100px;
+    margin: 100px auto;
+    }
+    .slick-slide {margin: 0px 5px;}
+    .slick-slide img {width: 100%;}
+    .slick-prev:before, .slick-next:before {
+    color: black;
+    }
+    .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+    }
+    .slick-active { opacity: .5; }
+    .slick-current { opacity: 1; }
+
+/*bolt js*/
+#gratulacio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;  
+    display: none;  
+}
+        
+#gratulacio img {
+    max-width: 100%;  
+    height: auto
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    div#tartalom{
+        flex-direction: column;
+    }
+    
+    nav ul{
+        flex-direction: row;
+    }
+
+    .kosartable{
+        background-image: url("kepek/palyakep.png");
+        width: 500px;
+        height: 500px;
+        text-align: center;
+    }
+
+    .slider {
+        width: 350px;
+        min-width: 100px;
+        margin: 100px auto;
+        }
+        .slick-slide {margin: 0px 5px;}
+        .slick-slide img {width: 100%;}
+        .slick-prev:before, .slick-next:before {
+        color: black;
+        }
+        .slick-slide {
+        transition: all ease-in-out .3s;
+        opacity: .2;
+        }
+        .slick-active { opacity: .5; }
+        .slick-current { opacity: 1; }
+    
+}
+
+@media only screen and (min-width: 768px){
+    div#tartalom{
+        flex-direction: row;
+    }
+    .kosartable{
+        background-image: url("kepek/palyakep.png");
+        width: 500px;
+        height: 500px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .slider {
+        width: 500px;
+        min-width: 100px;
+        margin: 100px auto;
+        }
+        .slick-slide {margin: 0px 5px;}
+        .slick-slide img {width: 100%;}
+        .slick-prev:before, .slick-next:before {
+        color: black;
+        }
+        .slick-slide {
+        transition: all ease-in-out .3s;
+        opacity: .2;
+        }
+        .slick-active { opacity: .5; }
+        .slick-current { opacity: 1; }
+        
+        
+    #boltoldal{
+        display: flex;
+        flex-direction: row;
+        flex-basis:50%;
+        justify-content: space-between;
+        gap: 5px;
+        }
+}
+
+
+
+
+
